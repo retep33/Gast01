@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.felhasznalo.gast01.MainActivity">
+    <item
+        android:id="@+id/felpakol"
+        android:orderInCategory="100"
+        android:title="Felpakolás"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/elad"
+        android:orderInCategory="200"
+        android:title="Eladás"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/elszallit"
+        android:orderInCategory="300"
+        android:title="Elszállítás"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/lepakol"
+        android:orderInCategory="400"
+        android:title="Lepakolás"
+        app:showAsAction="never" />
+
+</menu>

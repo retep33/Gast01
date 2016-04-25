@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gast01</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_felpakol">Felpakol</string>
+    <string name="title_activity_elad">Elad</string>
+    <string name="title_activity_elszallit">Elszallit</string>
+    <string name="title_activity_lepakol">Lepakol</string>
+</resources>
