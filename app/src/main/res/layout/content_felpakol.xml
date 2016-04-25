@@ -15,7 +15,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Beolvasás"
+        android:text="Szkennelés indítása"
         android:id="@+id/button"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -123,4 +123,14 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView10"
         android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A vonalkód értéke"
+        android:id="@+id/text_felpakol_kod"
+        android:layout_below="@+id/textView11"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
 </RelativeLayout>

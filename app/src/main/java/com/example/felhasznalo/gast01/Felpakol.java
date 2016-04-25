@@ -12,9 +12,14 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Felpakol extends AppCompatActivity {
+
+    MyDBHandler dbHandler;
+    TextView buckysText;
+    String buckysInput;
 
     static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
 
@@ -83,7 +88,23 @@ public class Felpakol extends AppCompatActivity {
                 String contents = intent.getStringExtra("SCAN_RESULT");
                 String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
                 Toast.makeText(this, "TARTALOM: " + contents + "Formátum: " + format, Toast.LENGTH_LONG ).show();
+
+                buckysInput = contents;
+                buckysText = (TextView) findViewById(R.id.text_felpakol_kod);
+                dbHandler = new MyDBHandler(this, null, null, 1);
+                printDatabase();
             }
+
         }
     }
+    //Hozzáadni egy terméket az adatbázishoz
+
+
+    public void printDatabase(){
+        String dbString = dbHandler.databaseToString();
+        buckysText.setText(dbString);
+
+    }
+
+
 }
